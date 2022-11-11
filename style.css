@@ -25,7 +25,6 @@ section {
   scroll-snap-align: start;
   text-align: center;
   position: relative;
-  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -196,6 +195,11 @@ section {
   -webkit-animation: gradient 7.5s ease infinite;
           animation: gradient 7.5s ease infinite;
   width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .hello {
@@ -207,6 +211,7 @@ section {
 @media (max-width: 576px) {
   .hello {
     padding: 0 15px;
+    background-size: auto;
   }
 }
 .hello-name {
@@ -259,47 +264,47 @@ section {
 
 @-webkit-keyframes gradient {
   0% {
-    background-position-y: 15%;
+    background-position-y: 1000%;
   }
   50% {
-    background-position-y: -15%;
+    background-position-y: -1000%;
   }
   100% {
-    background-position-y: 15%;
+    background-position-y: 1000%;
   }
 }
 
 @keyframes gradient {
   0% {
-    background-position-y: 15%;
+    background-position-y: 1000%;
   }
   50% {
-    background-position-y: -15%;
+    background-position-y: -1000%;
   }
   100% {
-    background-position-y: 15%;
+    background-position-y: 1000%;
   }
 }
 @-webkit-keyframes gradientMini {
   0% {
-    background-position-y: 5%;
+    background-position-y: 1%;
   }
   50% {
-    background-position-y: -5%;
+    background-position-y: -1%;
   }
   100% {
-    background-position-y: 5%;
+    background-position-y: 1%;
   }
 }
 @keyframes gradientMini {
   0% {
-    background-position-y: 5%;
+    background-position-y: 1%;
   }
   50% {
-    background-position-y: -5%;
+    background-position-y: -1%;
   }
   100% {
-    background-position-y: 5%;
+    background-position-y: 1%;
   }
 }
 .show {
@@ -594,8 +599,7 @@ section {
 .work-title {
   width: 50%;
   display: flex;
-  justify-content: start;
-  align-items: center;
+  justify-content: end;
   align-items: start;
   padding-top: 37px;
   border: 1px solid rgba(0, 0, 0, 0.144);
