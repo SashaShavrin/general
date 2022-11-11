@@ -8,14 +8,12 @@
       }, 3000 * i)
     }
   }())
-
-
-   function menuOnClick() {
+  
+  function menuOnClick() {
     document.getElementById("menu-bar").classList.toggle("change");
     document.getElementById("nav").classList.toggle("change");
     document.getElementById("menu-bg").classList.toggle("change-bg");
   }
-
  
   window.onscroll = function() {
     var scrolled = window.pageYOffset;
@@ -117,25 +115,26 @@
     let img = document.getElementById('block1');
     img.classList.toggle('show')
   }
-  setTimeout(getImg, 750)
+  setTimeout(getImg, 1000)
   
   function getFullName() {
     let fullName = document.getElementById('block2');
     fullName.classList.toggle('show')
   }
-  setTimeout(getFullName, 750)
+  setTimeout(getFullName, 1000)
   
   function getText() {
     let text = document.getElementById('block3');
     text.classList.toggle('show')
   }
-  setTimeout(getText, 950)
+  setTimeout(getText, 1100)
   
   function getMenu() {
     let menu = document.getElementById('menu');
     menu.classList.toggle('showMenu')
   }
-  setTimeout(getMenu, 850)
+  setTimeout(getMenu, 1050)
+
   var hello = "Hello! My name is Alexander";
   var i = -1;
   setInterval(function() {
