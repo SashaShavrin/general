@@ -96,6 +96,17 @@
 
 
     let work = document.getElementById('work');
+    if ((scrolled + 500) > work.offsetTop && window.innerWidth < 500) {
+      (function() {
+        let spanWork = work.querySelectorAll('.work-span');
+        for (let i = 0; i < spanWork.length; i++) {
+          setTimeout(function() {
+            spanWork[i].style.marginRight = "1px";
+            spanWork[i].style.color = "black";
+          }, 30 * i)
+        }
+      }())
+    } 
     if ((scrolled + 250) > work.offsetTop) {
       (function() {
         let spanWork = work.querySelectorAll('.work-span');
@@ -161,7 +172,6 @@
   }
   
  
-
   var hello = "Hello! My name is Alexander";
   var i = -1;
   if (window.innerWidth < 500) {
