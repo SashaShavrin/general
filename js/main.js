@@ -121,13 +121,13 @@
     let fullName = document.getElementById('block2');
     fullName.classList.toggle('show')
   }
-  setTimeout(getFullName, 1000)
+  setTimeout(getFullName, 1400)
   
   function getText() {
     let text = document.getElementById('block3');
     text.classList.toggle('show')
   }
-  setTimeout(getText, 1100)
+  setTimeout(getText, 1400)
   
   function getMenu() {
     let menu = document.getElementById('menu');
