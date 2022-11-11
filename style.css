@@ -523,16 +523,20 @@ section {
   height: 340px;
   margin: 0 auto;
 }
+@media (max-width: 992px) {
+  .projects-content__item-img {
+    height: 320px;
+  }
+}
 @media (max-width: 768px) {
   .projects-content__item-img {
-    height: 250px;
+    height: 280px;
     transition: 0.5s;
   }
 }
 @media (max-width: 576px) {
   .projects-content__item-img {
-    height: 130px;
-    padding: 0 20px;
+    padding: 20px;
   }
 }
 .projects-content__item-title {
@@ -590,7 +594,7 @@ section {
 .work-title {
   width: 50%;
   display: flex;
-  justify-content: end;
+  justify-content: start;
   align-items: center;
   align-items: start;
   padding-top: 37px;
