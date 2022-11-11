@@ -281,24 +281,24 @@ section {
 }
 @-webkit-keyframes gradientMini {
   0% {
-    background-position-y: 50%;
+    background-position-y: 30%;
   }
   50% {
-    background-position-y: -50%;
+    background-position-y: -30%;
   }
   100% {
-    background-position-y: 50%;
+    background-position-y: 30%;
   }
 }
 @keyframes gradientMini {
   0% {
-    background-position-y: 50%;
+    background-position-y: 30%;
   }
   50% {
-    background-position-y: -50%;
+    background-position-y: -30%;
   }
   100% {
-    background-position-y: 50%;
+    background-position-y: 30%;
   }
 }
 .show {
