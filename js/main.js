@@ -164,12 +164,25 @@
 
   var hello = "Hello! My name is Alexander";
   var i = -1;
-  setInterval(function() {
-    if (i >= hello.length - 1) {
-      return false
+  if (window.innerWidth < 500) {
+    setInterval(function() {
+      if (i >= hello.length - 1) {
+        return false
+      } else {
+        ++i
+        document.getElementById('insertHello').innerHTML += hello[i];
+        insertHello.classList.toggle('sayHello')
+      }
+    }, 15)
     } else {
-      ++i
-      document.getElementById('insertHello').innerHTML += hello[i];
-      insertHello.classList.toggle('sayHello')
+      setInterval(function() {
+        if (i >= hello.length - 1) {
+          return false
+        } else {
+          ++i
+          document.getElementById('insertHello').innerHTML += hello[i];
+          insertHello.classList.toggle('sayHello')
+        }
+      }, 30)
     }
-  }, 30)
+  
