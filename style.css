@@ -375,6 +375,11 @@ section {
   margin-right: 200px;
   transition: 2s;
 }
+@media (max-width: 768px) {
+  .work-span {
+    margin-top: -42px;
+  }
+}
 
 .techologies {
   display: flex;
@@ -389,7 +394,7 @@ section {
 }
 @media (max-width: 768px) {
   .techologies-title {
-    width: 19%;
+    width: 22%;
   }
 }
 .techologies-title__name {
@@ -521,6 +526,7 @@ section {
 @media (max-width: 768px) {
   .projects-content__item-img {
     height: 250px;
+    transition: 0.5s;
   }
 }
 @media (max-width: 576px) {
@@ -715,4 +721,4 @@ section {
   fill: none;
   background-color: white;
   border-radius: 15px;
-}/*# sourceMappingURL=style.css.map */
+}
