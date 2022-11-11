@@ -24,7 +24,7 @@
         for (let i = 0; i < span.length; i++) {
           setTimeout(function() {
             if (window.innerWidth < 500){
-                span[i].style.marginRight = "-3px";
+                span[i].style.marginRight = "3px";
             } else {
                 span[i].style.marginRight = "1px";
             }
