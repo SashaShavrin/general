@@ -206,6 +206,7 @@ section {
     padding: 0 20px;
     -webkit-animation: gradientMini 7.5s ease infinite;
             animation: gradientMini 7.5s ease infinite;
+    justify-content: start;
   }
 }
 @media (max-width: 576px) {
