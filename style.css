@@ -259,25 +259,25 @@ section {
 
 @-webkit-keyframes gradient {
   0% {
-    background-position-y: 50%;
+    background-position-y: 15%;
   }
   50% {
-    background-position-y: -50%;
+    background-position-y: -15%;
   }
   100% {
-    background-position-y: 50%;
+    background-position-y: 15%;
   }
 }
 
 @keyframes gradient {
   0% {
-    background-position-y: 50%;
+    background-position-y: 15%;
   }
   50% {
-    background-position-y: -30%;
+    background-position-y: -15%;
   }
   100% {
-    background-position-y: 50%;
+    background-position-y: 15%;
   }
 }
 @-webkit-keyframes gradientMini {
