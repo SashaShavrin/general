@@ -84,7 +84,7 @@
       four.src = "./img/image 9.png";
     }
     if ((scrolled + 250) > item4.offsetTop) {
-        item4.style.height = '365px';
+        item4.style.height = '330px';
         item4.style.padding = '15px';
     }
     if ((scrolled + 450) > item4.offsetTop && window.innerWidth < 500) {
