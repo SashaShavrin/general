@@ -9,11 +9,7 @@
     }
   }())
   
-  function menuOnClick() {
-    document.getElementById("menu-bar").classList.toggle("change");
-    document.getElementById("nav").classList.toggle("change");
-    document.getElementById("menu-bg").classList.toggle("change-bg");
-  }
+ 
   window.onscroll = function() {
     var scrolled = window.pageYOffset;
     if (scrolled > 500) {
@@ -22,7 +18,11 @@
         let span = name.querySelectorAll('.techologies-span');
         for (let i = 0; i < span.length; i++) {
           setTimeout(function() {
-            span[i].style.marginRight = "1px";
+            if (window.innerWidth < 500){
+                span[i].style.marginRight = "-3px";
+            } else {
+                span[i].style.marginRight = "1px";
+            }
           }, 30 * i)
         }
       }())
@@ -41,47 +41,55 @@
     }
     let item1 = document.getElementById('one');
     if ((scrolled + 250) > item1.offsetTop) {
-      if (window.innerWidth < 500) {
-        item1.style.height = '385px';
-        item1.style.padding = '15px';
-      } else {
+     
         item1.style.height = '330px';
         item1.style.padding = '15px';
-      }
+      
     }
+    if ((scrolled + 500) > item1.offsetTop && window.innerWidth < 500) {
+       
+          item1.style.height = '385px';
+          item1.style.padding = '15px';
+        
+      }
     let item2 = document.getElementById('two');
-    if ((scrolled + 250) > item2.offsetTop) {
-      if (window.innerWidth < 500) {
-        item2.style.height = '290px';
-        item2.style.padding = '15px';
-      } else {
+    if ((scrolled + 500) > item2.offsetTop) {
+ 
         item2.style.height = '330px';
         item2.style.padding = '15px';
-      }
+      
     }
+    if ((scrolled + 500) > item2.offsetTop && window.innerWidth < 500) {
+     
+          item2.style.height = '290px';
+          item2.style.padding = '15px';
+        
+      }
     let item3 = document.getElementById('three');
     if ((scrolled + 250) > item3.offsetTop) {
-      if (window.innerWidth < 500) {
-        item3.style.height = '385px';
-        item3.style.padding = '15px';
-      } else {
         item3.style.height = '330px';
         item3.style.padding = '15px';
-      }
     }
+    if ((scrolled + 500) > item3.offsetTop && window.innerWidth < 500) {
+          item3.style.height = '385px';
+          item3.style.padding = '15px';
+      }
     let item4 = document.getElementById('four');
     if (window.innerWidth < 650) {
       four.src = "./img/image 9.png";
     }
     if ((scrolled + 250) > item4.offsetTop) {
-      if (window.innerWidth < 500) {
-        item4.style.height = '430px';
-        item4.style.padding = '15px';
-      } else {
         item4.style.height = '365px';
         item4.style.padding = '15px';
-      }
     }
+    if ((scrolled + 450) > item4.offsetTop && window.innerWidth < 500) {
+          item4.style.height = '430px';
+          item4.style.padding = '15px';
+      }
+
+
+
+
     let work = document.getElementById('work');
     if ((scrolled + 250) > work.offsetTop) {
       (function() {
@@ -95,30 +103,32 @@
       }())
     }
   }
+
+
   
   function getImg() {
     let img = document.getElementById('block1');
     img.classList.toggle('show')
   }
-  setTimeout(getImg, 500)
+  setTimeout(getImg, 750)
   
   function getFullName() {
     let fullName = document.getElementById('block2');
     fullName.classList.toggle('show')
   }
-  setTimeout(getFullName, 500)
+  setTimeout(getFullName, 750)
   
   function getText() {
     let text = document.getElementById('block3');
     text.classList.toggle('show')
   }
-  setTimeout(getText, 700)
+  setTimeout(getText, 950)
   
   function getMenu() {
     let menu = document.getElementById('menu');
     menu.classList.toggle('showMenu')
   }
-  setTimeout(getMenu, 800)
+  setTimeout(getMenu, 850)
   var hello = "Hello! My name is Alexander";
   var i = -1;
   setInterval(function() {
