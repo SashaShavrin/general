@@ -696,6 +696,11 @@ section {
   left: -6px;
   transform: translateY(-50%);
 }
+@media (max-width: 576px) {
+  .heading__title--stroke {
+    left: -3px;
+  }
+}
 
 .contacts {
   color: white;
