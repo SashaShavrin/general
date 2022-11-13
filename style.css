@@ -39,6 +39,8 @@ section {
   cursor: pointer;
   z-index: 10;
   position: relative;
+  margin-top: 45px;
+  margin-left: 15px;
 }
 
 .bar {
@@ -92,18 +94,11 @@ section {
 }
 
 .menu-bg, #menu {
-  top: 30px;
-  left: 30px;
   position: absolute;
-}
-@media (max-width: 576px) {
-  .menu-bg, #menu {
-    left: 15px;
-  }
 }
 
 .menu-bg {
-  background: black;
+  background: BLACK;
 }
 
 .change {
@@ -132,7 +127,8 @@ section {
 .change-bg {
   width: 300vw;
   height: 300vh;
-  transform: translate(-60%, -30%);
+  margin: 0;
+  padding: 0;
 }
 
 .gif {
