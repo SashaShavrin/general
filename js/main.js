@@ -150,7 +150,7 @@ if (window.innerWidth < 500) {
   }
   setTimeout(getMenu, 1000)
 }
-var hello = "Hello! My name is Alexander";
+var hello = "Hello! I am Alexander";
 var i = -1;
 if (window.innerWidth < 500) {
   setInterval(function() {
