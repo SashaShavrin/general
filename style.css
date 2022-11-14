@@ -542,6 +542,7 @@ section {
   text-align: center;
   letter-spacing: -1px;
   font-weight: bold;
+  margin-top: 15px;
 }
 .projects-content__item-info {
   font-size: 16px;
