@@ -719,7 +719,7 @@ section {
 .contacts-item {
   margin: 15px 15px;
   padding: 5px;
-  transition: 1s;
+  transition: 0.4s;
   border: 1px solid rgba(255, 255, 255, 0.336);
   border-radius: 15px;
 }
