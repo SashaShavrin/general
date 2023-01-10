@@ -545,7 +545,6 @@ section {
 @media (max-width: 576px) {
   .projects-content__item-img {
     padding: 20px;
-    transition: 0.2s;
   }
 }
 .projects-content__item-title {
