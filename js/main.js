@@ -28,25 +28,25 @@ if (window.innerWidth < 500) {
     let img = document.getElementById('block1');
     img.classList.toggle('show')
   }
-  setTimeout(getImg, 2000)
+  setTimeout(getImg, 1000)
 
   function getFullName() {
     let fullName = document.getElementById('block2');
     fullName.classList.toggle('show')
   }
-  setTimeout(getFullName, 2100)
+  setTimeout(getFullName, 1100)
 
   function getText() {
     let text = document.getElementById('block3');
     text.classList.toggle('show')
   }
-  setTimeout(getText, 2200)
+  setTimeout(getText, 1200)
 
   function getMenu() {
     let menu = document.getElementById('menu');
     menu.classList.toggle('showMenu')
   }
-  setTimeout(getMenu, 100)
+  setTimeout(getMenu, 500)
 } else {
   function getImg() {
     let img = document.getElementById('block1');
