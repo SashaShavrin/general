@@ -64,7 +64,7 @@ section {
 .nav {
   transition: 0.3s ease;
   display: none;
-  z-index: 2;
+  z-index: -10;
   position: relative;
 }
 
@@ -335,6 +335,7 @@ section {
 .showMenu {
   -webkit-animation: aniMenu 1.5s forwards;
           animation: aniMenu 1.5s forwards;
+  z-index:10;
 }
 
 @-webkit-keyframes aniMenu {
