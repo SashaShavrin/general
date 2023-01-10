@@ -41,6 +41,7 @@ section {
   position: relative;
   margin-top: 45px;
   margin-left: 15px;
+  -webkit-backface-visibility: hidden;
 }
 
 .bar {
