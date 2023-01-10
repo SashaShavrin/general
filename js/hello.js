@@ -45,7 +45,7 @@ if (window.innerWidth < 500) {
     let menu = document.getElementById('menu');
     menu.classList.toggle('showMenu')
   }
-  setTimeout(getMenu, 1000)
+  setTimeout(getMenu, 2000)
 } else {
   function getImg() {
     let img = document.getElementById('block1');
